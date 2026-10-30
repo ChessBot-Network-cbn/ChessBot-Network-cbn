@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Discover ongoing, upcoming and finished Arena tournaments hosted by ChessBot Network on Lichess."
+    >
+
+    <meta name="theme-color" content="#090611">
+
+    <title>Tournaments | ChessBot Network</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="tournament.js" defer></script>
+</head>
+
+<body>
+
+
+<nav class="top-navbar">
+
+    <a href="https://lichess.org/team/chessbot-network-cbn">
+        Join us on Lichess
+    </a>
+
+    <div class="navbar">
+
+        <a href="index.html">
+            home
+        </a>
+
+        <a href="bots.html">
+            Our Bots
+        </a>
+
+        <a href="engine.html">
+            engine
+        </a>
+
+        <a href="tournament.html">
+            tournament
+        </a>
+
+    </div>
+
+</nav>
+
+
+
+    <!-- Main content -->
+    <main>
+
+        <!-- Page header -->
+        <header class="tournament-hero">
+            <p class="eyebrow">CHESSBOT NETWORK</p>
+
+            <h1>CBN Tournaments</h1>
+
+            <p class="hero-description">
+                Follow our Arena tournaments, challenge other chess bots,
+                and explore past competitions on Lichess.
+            </p>
+
+            <a
+                class="button"
+                href="https://lichess.org/team/chessbot-network-cbn"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Visit our Lichess Team
+            </a>
+        </header>
+
+
+        <!-- Current tournaments -->
+        <section class="tournament-section">
+            <div class="section-heading">
+                <span class="section-label">LIVE</span>
+                <h2>Ongoing Tournaments</h2>
+                <p>
+                    Arena tournaments that are currently in progress.
+                </p>
+            </div>
+
+            <div
+                id="arenaCurrent"
+                class="tournament-grid"
+                aria-live="polite"
+            >
+                <div class="card loading-card">
+                    <p>Loading ongoing tournaments...</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Upcoming tournaments -->
+        <section class="tournament-section">
+            <div class="section-heading">
+                <span class="section-label">NEXT</span>
+                <h2>Upcoming Tournaments</h2>
+                <p>
+                    Arena tournaments that have been scheduled.
+                </p>
+            </div>
+
+            <div
+                id="arenaUpcoming"
+                class="tournament-grid"
+                aria-live="polite"
+            >
+                <div class="card loading-card">
+                    <p>Loading upcoming tournaments...</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Finished tournaments -->
+        <section class="tournament-section">
+            <div class="section-heading">
+                <span class="section-label">ARCHIVE</span>
+                <h2>Finished Tournaments</h2>
+                <p>
+                    Look back at completed CBN Arena tournaments.
+                </p>
+            </div>
+
+            <div
+                id="arenaFinished"
+                class="tournament-grid"
+                aria-live="polite"
+            >
+                <div class="card loading-card">
+                    <p>Loading finished tournaments...</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Team call to action -->
+        <section class="tournament-cta">
+            <h2>Ready to compete?</h2>
+
+            <p>
+                Join the ChessBot Network team on Lichess to follow
+                our community and discover future events.
+            </p>
+
+            <a
+                class="button"
+                href="https://lichess.org/team/chessbot-network-cbn"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Explore CBN on Lichess
+            </a>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p class="footer-brand">ChessBot Network</p>
+        <p>A community for chess bots and their creators.</p>
+
+        <p>
+            <a href="https://github.com/ChessBot-Network-cbn"
+               target="_blank"
+               rel="noopener noreferrer">
+                GitHub
+            </a>
+            ·
+            <a href="https://lichess.org/team/chessbot-network-cbn"
+               target="_blank"
+               rel="noopener noreferrer">
+                Lichess
+            </a>
+        </p>
+
+        <p class="copyright">
+            &copy; 2026 ChessBot Network. All rights reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
